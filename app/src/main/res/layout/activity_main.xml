@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.google.material.app"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matematică-Informatică"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bacalaureat 2021"
+        android:textSize="35dp"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    <Button
+        android:id="@+id/materie"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/button_background"
+        android:text="Materie pentru BAC 2021"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/exersare"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="360dp"
+        android:text="Fixare cunoștințe"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/varianteBAC"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="490dp"
+        android:textSize="20dp"
+        android:text="Variante BAC 2021" />
+
+</RelativeLayout>
